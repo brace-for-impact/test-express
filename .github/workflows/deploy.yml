@@ -31,6 +31,6 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            cd /home/ubuntu/simple-service-staging
+            cd ~/simple-service-staging
             docker compose pull simple-service-staging
             docker compose up -d --force-recreate --no-deps simple-service-staging
