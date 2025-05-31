@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  simple-service-staging:
+    image: braceforimpact/simple-service-staging:latest
+    container_name: simple-service-staging
+    restart: always
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
